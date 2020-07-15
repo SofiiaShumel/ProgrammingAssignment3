@@ -21,7 +21,7 @@ best <- function(state, outcome){
   }else{
     
     
-    ## Return hospital name in that state with lowest 30-day death
+    ## Return hospital name in that state with lowest 30-day death rate
     subset_df <- df[df[,7]==state, c(7, 2, outcomes[outcome])]
     names(subset_df) <- c('state','hospital', 'outcome')
     
